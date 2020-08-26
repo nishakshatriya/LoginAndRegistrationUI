@@ -47,3 +47,10 @@ body{
     background: #43A047;
 }
 
+#button{
+    background-color: rgb(5, 168, 5);
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;  
+}
+
