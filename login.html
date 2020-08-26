@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class = "login-page">
@@ -9,11 +10,25 @@
                 <br></br>
                 <form class="login-form" action="successpage.html"> 
                     <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
+                    <input type="password" id="pwd" placeholder="Password">
+                    <span>
+                        <i class="fa fa-eye" id="eye"></i>
+                    </span>
                     <input id="button" type="submit" value="LOGIN">
                     <p class="message">Create Account <a href="registration.html">Register</a></p>
                 </form>
                 </div>
         </div>  
+        <script>
+            var pwd = document.getElementById('pwd');
+            var eye = document.getElementById('eye');
+            eye.addEventListener('click', togglePass);
+
+            function togglePass(){ 
+                (pwd.type == 'password') ? pwd.type = 'text' : 
+                pwd.type = 'password';
+                eye.classList.toggle('active');       
+            }
+        </script>
     </body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 </html>
