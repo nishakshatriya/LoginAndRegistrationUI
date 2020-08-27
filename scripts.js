@@ -28,4 +28,5 @@ function validation(){
         return false;
     }
     alert("Form Successfully Submitted");
+    location.reload();
 }
