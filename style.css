@@ -1,5 +1,5 @@
 body{
-    background-color: #ffff99;
+    background-color: rgb(247, 229, 236);
 }
 
 .login-page{
@@ -15,7 +15,7 @@ body{
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 40px;
-    text-align: center;
+   
 }
 
 .form input{
@@ -41,6 +41,7 @@ body{
 .fundooImage{
     width: 100px;
     height: 50px;
+    margin-left: 30%;
 }
 
 .form button:hover,.form button:active{
@@ -70,3 +71,24 @@ body{
 .fa.active{
     color: midnightblue;
 }
+
+#nameerror{
+    color: red;
+    font-style: bold;
+    margin-top: 2px;
+}
+
+#emailerror{
+    color: red;
+    font-style: bold;
+}
+
+#passworderror{
+    color: red;
+    font-style: bold;
+}
+
+.message{
+    text-align: center;
+}
+
