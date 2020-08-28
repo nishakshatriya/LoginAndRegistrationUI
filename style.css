@@ -13,7 +13,7 @@ body{
     z-index: 1;
     background-color: #ffffff;
     max-width: 360px;
-    margin: 100px auto 100px;
+    margin: 60px auto 100px;
     padding: 40px;
    
 }
@@ -45,7 +45,7 @@ input[name="button"]{
     padding-bottom:5%;
 }
 
-.form #button:hover,.form button:active{
+.form input[name="button"]:hover,.form input[name="button"]:active{
     background: #43A047;
 }
 

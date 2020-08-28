@@ -35,3 +35,20 @@ function validation(){
     alert("Form Successfully Submitted");
     location.reload();
 }
+
+function togglePass(){ 
+    (pwd.type == 'password') ? pwd.type = 'text' : 
+    pwd.type = 'password';
+    eye.classList.toggle('active');       
+}
+
+function disableButton(){
+    if((document.getElementsByName('username')[0].value != "")){
+        if((document.getElementsByName('pwd')[0].value != "")){
+            document.getElementsByName('button')[0].disabled = false;
+        }                   
+    }
+    else{
+        document.getElementsByName("button")[0].disabled = true;
+    }
+}

@@ -2,6 +2,7 @@
     <head>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <div class = "login-page">
@@ -22,22 +23,6 @@
             var pwd = document.getElementsByName('pwd')[0];
             var eye = document.getElementById('eye');
             eye.addEventListener('click', togglePass);
-            function togglePass(){ 
-                (pwd.type == 'password') ? pwd.type = 'text' : 
-                pwd.type = 'password';
-                eye.classList.toggle('active');       
-            }
-
-            function disableButton(){
-                if((document.getElementsByName('username')[0].value != "")){
-                    if((document.getElementsByName('pwd')[0].value != "")){
-                        document.getElementsByName('button')[0].disabled = false;
-                    }                   
-                }
-                else{
-                    document.getElementsByName("button")[0].disabled = true;
-                }
-            }
         </script>
     </body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 </html>
