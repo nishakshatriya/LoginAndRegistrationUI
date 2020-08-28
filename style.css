@@ -4,16 +4,16 @@ body{
 
 .login-page{
     width: 400px;
-    padding: 10%;
     margin: auto;
+    position: relative;
 }
 
 .form{
-    position: relative;
+    position: absolute;
     z-index: 1;
     background-color: #ffffff;
     max-width: 360px;
-    margin: 0 auto 100px;
+    margin: 100px auto 100px;
     padding: 40px;
    
 }
@@ -31,7 +31,7 @@ body{
    font-size: 15px;
 }
 
-.form button{
+input[name="button"]{
     background-color: darkgreen;
     width: 100%;
     padding: 15px;
@@ -42,17 +42,11 @@ body{
     width: 100px;
     height: 50px;
     margin-left: 30%;
+    padding-bottom:5%;
 }
 
-.form button:hover,.form button:active{
+.form #button:hover,.form button:active{
     background: #43A047;
-}
-
-#button{
-    background-color: rgb(5, 168, 5);
-    width: 100%;
-    padding: 15px;
-    cursor: pointer;  
 }
 
 .form i{

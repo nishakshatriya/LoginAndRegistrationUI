@@ -7,27 +7,36 @@
         <div class = "login-page">
             <div class = "form">
                 <img class="fundooImage" src="fundoo.png">
-                <br></br>
-                <form class="login-form" action="successpage.html"> 
-                    <input type="text" placeholder="Username">
-                    <input type="password" id="pwd" placeholder="Password">
+                <form class="login-form" action="successpage.html" method="POST"> 
+                    <input type="text" placeholder="Username" name="username" onkeyup="disableButton()">
+                    <input type="password" name="pwd" placeholder="Password" onkeyup="disableButton()">
                     <span>
                         <i class="fa fa-eye" id="eye"></i>
                     </span>
-                    <input id="button" type="submit" value="LOGIN">
+                    <input name="button" type="submit" value="LOGIN" disabled>
                     <p class="message">Create Account <a href="registration.html">Register</a></p>
                 </form>
                 </div>
         </div>  
         <script>
-            var pwd = document.getElementById('pwd');
+            var pwd = document.getElementsByName('pwd')[0];
             var eye = document.getElementById('eye');
             eye.addEventListener('click', togglePass);
-
             function togglePass(){ 
                 (pwd.type == 'password') ? pwd.type = 'text' : 
                 pwd.type = 'password';
                 eye.classList.toggle('active');       
+            }
+
+            function disableButton(){
+                if((document.getElementsByName('username')[0].value != "")){
+                    if((document.getElementsByName('pwd')[0].value != "")){
+                        document.getElementsByName('button')[0].disabled = false;
+                    }                   
+                }
+                else{
+                    document.getElementsByName("button")[0].disabled = true;
+                }
             }
         </script>
     </body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
